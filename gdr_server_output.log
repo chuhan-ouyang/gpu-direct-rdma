@@ -1,0 +1,88 @@
+Conflicting CPU frequency values detected: 2200.000000 != 2500.000000. CPU Frequency is not max.
+Perftest doesn't supports CUDA tests with inline messages: inline size set to 0
+
+************************************
+* Waiting for client to connect... *
+************************************
+initializing CUDA
+Listing all CUDA devices in system:
+CUDA device 0: PCIe address is 86:00
+
+Picking device No. 0
+[pid = 1228375, dev = 0] device name = [Tesla P100-PCIE-12GB]
+creating CUDA Ctx
+making it the current CUDA Ctx
+CUDA device integrated: 0
+cuMemAlloc() of a 16777216 bytes GPU buffer
+allocated GPU buffer address at 00007fdce2800000 pointer=0x7fdce2800000
+---------------------------------------------------------------------------------------
+                    RDMA_Write Bidirectional BW Test
+ Dual-port       : OFF		Device         : mlx5_0
+ Number of qps   : 1		Transport type : IB
+ Connection type : RC		Using SRQ      : OFF
+ PCIe relax order: ON		Lock-free      : OFF
+ ibv_wr* API     : ON		Using DDP      : OFF
+ TX depth        : 128
+ CQ Moderation   : 100
+ CQE Poll Batch  : 16
+ Mtu             : 1024[B]
+ Link type       : Ethernet
+ GID index       : 3
+ Max inline data : 0[B]
+ rdma_cm QPs	 : OFF
+ Data ex. method : Ethernet
+---------------------------------------------------------------------------------------
+ local address: LID 0000 QPN 0x00d2 PSN 0x5be3d8 RKey 0x2006cd VAddr 0x007fdce3000000
+ GID: 00:00:00:00:00:00:00:00:00:00:255:255:10:10:01:01
+ remote address: LID 0000 QPN 0x00ca PSN 0xb89544 RKey 0x2006ce VAddr 0x007f81ab000000
+ GID: 00:00:00:00:00:00:00:00:00:00:255:255:10:10:01:02
+---------------------------------------------------------------------------------------
+ #bytes     #iterations    BW peak[MiB/sec]    BW average[MiB/sec]   MsgRate[Mpps]
+ 2          5000             17.22              15.04  		     7.884259Conflicting CPU frequency values detected: 2200.000000 != 2499.999000. CPU Frequency is not max.
+
+ 4          5000             34.79              34.69  		     9.094210Conflicting CPU frequency values detected: 2200.000000 != 2500.000000. CPU Frequency is not max.
+
+ 8          5000             69.11              45.84  		     6.008690Conflicting CPU frequency values detected: 2200.000000 != 2500.000000. CPU Frequency is not max.
+
+ 16         5000             138.07             111.54 		     7.309740Conflicting CPU frequency values detected: 2200.000000 != 2499.999000. CPU Frequency is not max.
+
+ 32         5000             277.49             236.18 		     7.739074Conflicting CPU frequency values detected: 2200.000000 != 2500.000000. CPU Frequency is not max.
+
+ 64         5000             556.25             555.82 		     9.106565Conflicting CPU frequency values detected: 2200.000000 != 2500.000000. CPU Frequency is not max.
+
+ 128        5000             1063.69            1061.94		     8.699381Conflicting CPU frequency values detected: 2200.000000 != 2499.999000. CPU Frequency is not max.
+
+ 256        5000             2006.66            1994.83		     8.170832Conflicting CPU frequency values detected: 2200.000000 != 2499.999000. CPU Frequency is not max.
+
+ 512        5000             3568.92            3565.24		     7.301604Conflicting CPU frequency values detected: 2200.000000 != 865.332000. CPU Frequency is not max.
+
+ 1024       5000             4756.23            3920.47		     4.014561Conflicting CPU frequency values detected: 2200.000000 != 2306.387000. CPU Frequency is not max.
+
+ 2048       5000             4956.05            4951.73		     2.535287Conflicting CPU frequency values detected: 2200.000000 != 2500.000000. CPU Frequency is not max.
+
+ 4096       5000             5306.42            5097.22		     1.304888Conflicting CPU frequency values detected: 2200.000000 != 2496.799000. CPU Frequency is not max.
+
+ 8192       5000             5320.81            5214.11		     0.667406Conflicting CPU frequency values detected: 2200.000000 != 2498.768000. CPU Frequency is not max.
+
+ 16384      5000             5324.98            5208.79		     0.333363Conflicting CPU frequency values detected: 2200.000000 != 2500.000000. CPU Frequency is not max.
+
+ 32768      5000             5323.77            5168.61		     0.165396Conflicting CPU frequency values detected: 2200.000000 != 2498.930000. CPU Frequency is not max.
+
+ 65536      5000             5252.45            5170.03		     0.082720Conflicting CPU frequency values detected: 2200.000000 != 2499.927000. CPU Frequency is not max.
+
+ 131072     5000             5329.71            5170.68		     0.041365Conflicting CPU frequency values detected: 2200.000000 != 2498.424000. CPU Frequency is not max.
+
+ 262144     5000             5252.05            5170.66		     0.020683Conflicting CPU frequency values detected: 2200.000000 != 854.997000. CPU Frequency is not max.
+
+ 524288     5000             5180.45            5169.57		     0.010339Conflicting CPU frequency values detected: 800.000000 != 2200.000000. CPU Frequency is not max.
+
+ 1048576    5000             5170.05            5169.29		     0.005169Conflicting CPU frequency values detected: 2200.000000 != 866.149000. CPU Frequency is not max.
+
+ 2097152    5000             5171.61            5153.85		     0.002577Conflicting CPU frequency values detected: 2200.000000 != 864.769000. CPU Frequency is not max.
+
+ 4194304    5000             5162.82            5154.24		     0.001289Conflicting CPU frequency values detected: 800.044000 != 2200.000000. CPU Frequency is not max.
+
+ 8388608    5000             5156.13            5153.55		     0.000644
+---------------------------------------------------------------------------------------
+deallocating GPU buffer 00007fdce2800000
+destroying current CUDA Ctx
